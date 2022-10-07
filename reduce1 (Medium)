@@ -1,0 +1,12 @@
+// Return true if the marathon is 25 miles long, otherwise, return false.
+
+
+function marathonDistance(d) {
+
+  return d.reduce((a,b) => a + Math.abs(b), 0) == 25 ? true : false;
+
+}
+
+console.log(marathonDistance([1, 2, 3, 4])) // false
+console.log(marathonDistance([1, 9, 5, 8, 2])) // true
+console.log(marathonDistance([-6, 15, 4])) // true
