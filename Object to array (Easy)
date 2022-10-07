@@ -1,0 +1,19 @@
+function keysAndValues(obj){
+
+  let keyArr = [];
+  let valueArr = [];
+
+  for (let key in obj){
+    keyArr.push(key);
+    valueArr.push(obj[key]);
+
+  }
+
+  return [keyArr, valueArr];
+
+}
+
+
+console.log(keysAndValues({ a: 'Apple', b: 'Microsoft', c: 'Google'}))
+
+// [['a', 'b', 'c'], ['Apple', 'Microsoft', 'Google']]
